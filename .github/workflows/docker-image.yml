@@ -1,0 +1,14 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - name: Build the Docker image
+      run: docker build poc-ci:latest .
+
+    
