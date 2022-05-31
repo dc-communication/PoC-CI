@@ -10,5 +10,5 @@ jobs:
     steps: 
     - name: Build the Docker image
       working-directory: .
-      run: pwd && docker build -t poc-ci:latest .
+      run: pwd && ls && docker build -t poc-ci:latest .
 
