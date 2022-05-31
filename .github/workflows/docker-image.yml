@@ -21,9 +21,9 @@ jobs:
       - name: Print the PAT
         run: echo $CR_PAT
       - name: Login on Container registry
-        run: echo $CR_PAT | sudo docker login ghcr.io -u dc-communication --password-stdin
+        run: echo $CR_PAT | sudo docker login ghcr.io -u patacoing --password-stdin
       - name: Tag the image 
-        run: sudo docker tag poc-ci ghcr.io/poc-ci/poc-ci:latest
+        run: sudo docker tag poc-ci ghcr.io/dc-communication/poc-ci:latest
       - name: Push the image
-        run: sudo docker push ghcr.io/poc-ci/poc-ci:latest
+        run: sudo docker push ghcr.io/dc-communication/poc-ci:latest
 
