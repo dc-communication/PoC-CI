@@ -9,6 +9,6 @@ jobs:
     runs-on: self-hosted
     steps: 
     - name: Build the Docker image
-      working-directory: .
+      working-directory: /home/olive/actions-runner/_work/PoC-CI
       run: pwd && ls && docker build -t poc-ci:latest .
 
