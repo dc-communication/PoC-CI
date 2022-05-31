@@ -12,5 +12,5 @@ jobs:
     - name: Check whoami
       run: whoami
     - name: Build the Docker image
-      run: docker build -t poc-ci:latest .
+      run: sudo docker build -t poc-ci:latest .
 
