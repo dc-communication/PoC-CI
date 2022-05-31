@@ -7,8 +7,8 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    steps:
-      working-directory: . 
+    steps: 
     - name: Build the Docker image
+      working-directory: .
       run: pwd && docker build -t poc-ci:latest .
 
