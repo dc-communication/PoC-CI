@@ -14,7 +14,7 @@ jobs:
 
   deploy:
     runs-on: self-hosted
-    need: build
+    needs: build
     env:
         CR_PAT: ${{ secrets.CR_PAT }}
     steps:
